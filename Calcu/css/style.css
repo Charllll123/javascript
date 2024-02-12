@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(35deg, rgba(231, 212, 207, 0.7803921569), rgba(230, 6, 6, 0.5960784314));
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(58, 85, 81);
+  background-color: #333333;
+}
+.calculator .screen {
+  color: #eee4e9;
+  margin: 0 10px;
+  height: 150px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #button-1,
+.calculator #button-2,
+.calculator #button-3,
+.calculator #button-4,
+.calculator #button-5,
+.calculator #button-6,
+.calculator #button-7,
+.calculator #button-8,
+.calculator #button-9,
+.calculator #button-0 {
+  color: #FFFFFF;
+  background-color: #06A77D;
+}
+.calculator #button-percentage,
+.calculator #button-square,
+.calculator #button-less-than,
+.calculator #button-plus,
+.calculator #button-minus,
+.calculator #button-multiply,
+.calculator #button-divide {
+  color: #FFFFFF;
+  background-color: #052F5F;
+}
+.calculator #button-equals {
+  color: #000000;
+  background-color: #F1A208;
+}
+.calculator #button-dot {
+  color: #f3efef;
+  background-color: #0d633b;
+}
+.calculator #button-clear {
+  color: #f7f3f3;
+  background-color: #8D5A97;
+}
+.calculator.dark {
+  background-color: #d9e0d9;
+}
+.calculator.dark .screen {
+  color: #292F36;
+  margin: 0 10px;
+  height: 150px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator.dark #button-1,
+.calculator.dark #button-2,
+.calculator.dark #button-3,
+.calculator.dark #button-4,
+.calculator.dark #button-5,
+.calculator.dark #button-6,
+.calculator.dark #button-7,
+.calculator.dark #button-8,
+.calculator.dark #button-9,
+.calculator.dark #button-0 {
+  color: #F7FFF7;
+  background-color: #41cadf;
+}
+.calculator.dark #button-percentage,
+.calculator.dark #button-square,
+.calculator.dark #button-less-than,
+.calculator.dark #button-plus,
+.calculator.dark #button-minus,
+.calculator.dark #button-multiply,
+.calculator.dark #button-divide {
+  color: #FFFFFF;
+  background-color: #2E8B57;
+}
+.calculator.dark #button-equals {
+  color: #292F36;
+  background-color: #f5d42d;
+}
+.calculator.dark #button-dot {
+  color: #FFFFFF;
+  background-color: #4CB5AE;
+}
+.calculator.dark #button-clear {
+  color: #FFFFFF;
+  background-color: #FF101F;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #d6cfcf;
+  cursor: pointer;
+  z-index: 1;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  right: -15px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #F1E3E4;
+  z-index: -1;
+}
+.toggle.active {
+  color: #3b3838;
+}
+.toggle.active::before {
+  background-color: #1C1D21;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
